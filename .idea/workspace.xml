@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b620a20-76e4-4633-958b-2089677353ae" name="Default" comment="测试">
+    <list default="true" id="2b620a20-76e4-4633-958b-2089677353ae" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/spring_aop/target/" />
     <ignored path="$PROJECT_DIR$/spring_mvc/target/" />
@@ -45,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -155,7 +156,6 @@
         <option value="$PROJECT_DIR$/mybatis_test/src/main/java/UserMapper.java" />
         <option value="$PROJECT_DIR$/spring_test/src/test/java/Test1.java" />
         <option value="$PROJECT_DIR$/mybatis_test/src/main/resources/UserMap.xml" />
-        <option value="$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/ssm_anno/src/main/resources/com/itheima/sqlMapperConfig.xml" />
         <option value="$PROJECT_DIR$/ssm_anno/src/main/java/com/itheima/domain/Student.java" />
         <option value="$PROJECT_DIR$/ssm_anno/src/main/resources/jdbc.properties" />
@@ -173,6 +173,7 @@
         <option value="$PROJECT_DIR$/ssm_anno/src/main/resources/com/itheima/mapper/StudentMap.xml" />
         <option value="$PROJECT_DIR$/ssm_anno/src/main/webapp/save.jsp" />
         <option value="$PROJECT_DIR$/ssm_anno/src/main/resources/spring_mvc.xml" />
+        <option value="$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -618,7 +619,7 @@
       <workItem from="1570708120457" duration="525000" />
       <workItem from="1570710724658" duration="57000" />
       <workItem from="1570710801464" duration="940000" />
-      <workItem from="1570712277410" duration="244000" />
+      <workItem from="1570712277410" duration="267000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1570697638856</created>
@@ -634,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570697958730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试llll">
+      <created>1570712540451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570712540451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -670,10 +678,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197179000" />
+    <option name="totallyTimeSpent" value="197202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -682,7 +691,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.150108" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.150108" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20714286" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -742,7 +751,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="测试llll" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试llll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1128,7 +1138,7 @@
     <entry file="file://$PROJECT_DIR$/ssm_anno/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
