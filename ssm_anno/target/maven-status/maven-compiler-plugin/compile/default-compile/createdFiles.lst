@@ -1,0 +1,5 @@
+com\itheima\mapper\StudentMap.class
+com\itheima\service\ServiceImpl.class
+com\itheima\controller\Controller.class
+com\itheima\domain\Student.class
+com\itheima\service\Service.class

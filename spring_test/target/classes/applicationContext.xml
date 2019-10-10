@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       <!--组件扫描，用于注解-->
+       <context:component-scan base-package="itcast"></context:component-scan>
+       <!--加载配置文件，数据库-->
+       <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+       <!--切面自动代理-->
+       <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+       <!--new一个datasource-->
+       <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+           <property name="driverClass" value="${jdbc.driver}"></property>
+           <property name="jdbcUrl" value="${jdbc.url}"></property>
+           <property name="user" value="${jdbc.username}"></property>
+           <property name="password" value="${jdbc.password}"></property>
+       </bean>
+       <!--new一个jdbctemplate，因为new的是有参构造，所以实参需要引入叫做上面的对象名datasource-->
+       <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+              <constructor-arg name="dataSource" ref="dataSource"></constructor-arg>
+       </bean>
+
+       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+              <property name="dataSource" ref="dataSource"></property>
+       </bean>
+
+       <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+
+</beans>

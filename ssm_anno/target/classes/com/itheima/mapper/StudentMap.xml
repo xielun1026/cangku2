@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.mapper.StudentMap">
+    <select id="findAll" resultType="student">
+        SELECT * from ss
+    </select>
+    <insert id="save" parameterType="student">
+        insert into ss VALUES (#{name},#{subject},#{score})
+    </insert>
+</mapper>

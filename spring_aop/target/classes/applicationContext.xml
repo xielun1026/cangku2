@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+       <bean id="target" class="day03.practice.TargetImpl"></bean>
+
+       <bean id="aspect" class="day03.practice.MyAspect"></bean>
+
+       <aop:config>
+              <aop:aspect ref="aspect">
+                     <!--<aop:before method="before" pointcut="execution(public void day03.practice.Target.save())"></aop:before>-->
+                     <aop:before method="before" pointcut="execution(* day03.practice.*.*(..))"></aop:before>
+              </aop:aspect>
+       </aop:config>
+</beans>
