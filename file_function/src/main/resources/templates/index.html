@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>文件上传和下载</title>
+</head>
+<body>
+
+<form action='http://localhost:8087/file/upload' method='post' enctype='multipart/form-data'>
+    <input type='file' name='file'>
+    <button type='submit'>上传</button>
+</form>
+
+<button onclick="downLoad()">下载文件</button>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    // 直接通过ajax请求文件数据
+    // jquery下载文件时不能触发浏览器弹出保存文件对话框！
+    // 可以在javascript中访问下载的文件数据
+    function downLoad() {
+        var url = "http://localhost:8087/file/downLoad";
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: {
+                'fileName': "blog/2020-02-14/5773838755dc40cea335c96d820cc161-README.txt",
+                'zipName': "wwewe",
+                'savePath': "F:/sdfsd"
+            },
+            success: function (data, status, xhr) {
+                console.log("Download file DONE!");
+                console.log(data); // ajax方式请求的数据只能存放在javascipt内存空间，可以通过javascript访问，但是无法保存到硬盘
+                console.log(status);
+                console.log(xhr);
+                console.log("=====================");
+            }
+        });
+    }
+</script>
+</body>
+</html>
